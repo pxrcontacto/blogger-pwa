@@ -33,5 +33,5 @@ export default {
     logs: true,
     oneSignalEnabled: false,
   },
-  origin: 'https://porxrazoninfo.blogspot.com',
+  origin: 'https://porxrazoninfo.blogspot.com/',
 } satisfies Config;
