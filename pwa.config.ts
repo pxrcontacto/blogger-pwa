@@ -3,7 +3,7 @@ import type { Config } from './types';
 export default {
   id: '/',
   name: 'PORXRAZON INFO',
-  shortName: 'PORXRAZON INFO',
+  shortName: 'PORXRAZON',
   description: '¡Te acompañamos en cualquier parte del mundo!',
   direction: 'auto',
   language: 'es-ES',
