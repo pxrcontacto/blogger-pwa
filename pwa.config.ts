@@ -1,43 +1,74 @@
 import type { Config } from './types';
 
 export default {
+  /* =====================
+   * IDENTIDAD DE LA APP
+   * ===================== */
   id: '/',
-  name: 'My Blog',
-  shortName: 'My Blog',
-  description: 'My blog description goes here...',
+  name: 'PORXRAZON INFO',
+  shortName: 'PORXRAZON',
+  description: 'Noticias, actualidad y análisis – PORXRAZON INFO',
   direction: 'auto',
-  language: 'en-US',
-  backgroundColor: '#fff',
-  themeColor: '#fff',
+  language: 'es-ES',
+
+  /* =====================
+   * COLORES Y UI
+   * ===================== */
+  backgroundColor: '#7b2cff',
+  themeColor: '#7b2cff',
+  appleStatusBarStyle: 'black-translucent',
+
+  /* =====================
+   * COMPORTAMIENTO APP
+   * ===================== */
   display: 'standalone',
-  orientation: 'natural',
+  orientation: 'portrait',
   scope: '/',
   startUrl: '/?utm_source=homescreen',
-  appleStatusBarStyle: 'black-translucent',
   preferRelatedApplications: false,
+
+  /* =====================
+   * SHORTCUTS (ACCESOS RÁPIDOS)
+   * ===================== */
   shortcuts: [
     {
-      name: 'Shortcut 1',
-      shortName: 'Shortcut 1',
-      description: 'Shortcut 1 description goes here...',
-      url: '/search/label/shortcut-1?utm_source=homescreen',
+      name: 'Últimas noticias',
+      shortName: 'Noticias',
+      description: 'Ver las últimas noticias',
+      url: '/search/label/Noticias?utm_source=homescreen',
     },
     {
-      name: 'Shortcut 2',
-      shortName: 'Shortcut 2',
-      description: 'Shortcut 2 description goes here...',
-      url: '/search/label/shortcut-2?utm_source=homescreen',
+      name: 'Política',
+      shortName: 'Política',
+      description: 'Noticias de política',
+      url: '/search/label/Política?utm_source=homescreen',
+    },
+    {
+      name: 'Deportes',
+      shortName: 'Deportes',
+      description: 'Noticias deportivas',
+      url: '/search/label/Deportes?utm_source=homescreen',
     },
   ],
+
+  /* =====================
+   * PWA FEATURES
+   * ===================== */
   pwa: {
-    logs: true,
-    // OneSignal is only available if you are using cloudflare workers
-    oneSignalEnabled: false, // To enable OneSignal, set this to true
+    logs: false, // poner true solo si estás debugueando
+
+    // OneSignal SOLO funciona con dominio propio + Cloudflare
+    oneSignalEnabled: false,
+
     oneSignalConfig: {
-      appId: '********-****-****-****-************', // Replace with your OneSignal App Id
-      allowLocalhostAsSecureOrigin: true,
+      appId: '', // dejar vacío si no usás OneSignal
+      allowLocalhostAsSecureOrigin: false,
     },
   },
-  // Please replace with your blog url if you are using CDN (JsDelivr)
-  origin: 'https://hello-example.blogspot.com',
+
+  /* =====================
+   * URL REAL DEL BLOG
+   * ===================== */
+  origin: 'https://porxrazoninfo.blogspot.com',
+
 } satisfies Config;
