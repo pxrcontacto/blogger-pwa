@@ -6,7 +6,7 @@ export default {
   shortName: 'PORXRAZON',
   description: '¡Te acompañamos en cualquier parte del mundo!',
   direction: 'auto',
-  language: 'es-ES',
+  language: 'eu-US',
   backgroundColor: '#ffffff',
   themeColor: '#ffffff',
   display: 'standalone',
