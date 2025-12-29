@@ -1,74 +1,37 @@
 import type { Config } from './types';
 
 export default {
-  /* =====================
-   * IDENTIDAD DE LA APPP
-   * ===================== */
   id: '/',
   name: 'PORXRAZON INFO',
-  shortName: 'PORXRAZON',
-  description: 'Noticias, actualidad y análisis – PORXRAZON INFO',
+  shortName: 'PORXRAZON INFO',
+  description: '¡Te acompañamos en cualquier parte del mundo!',
   direction: 'auto',
   language: 'es-ES',
-
-  /* =====================
-   * COLORES Y UI
-   * ===================== */
-  backgroundColor: '#7b2cff',
-  themeColor: '#7b2cff',
-  appleStatusBarStyle: 'black-translucent',
-
-  /* =====================
-   * COMPORTAMIENTO APP
-   * ===================== */
+  backgroundColor: '#ffffff',
+  themeColor: '#ffffff',
   display: 'standalone',
-  orientation: 'portrait',
+  orientation: 'natural',
   scope: '/',
   startUrl: '/?utm_source=homescreen',
+  appleStatusBarStyle: 'black-translucent',
   preferRelatedApplications: false,
-
-  /* =====================
-   * SHORTCUTS (ACCESOS RÁPIDOS)
-   * ===================== */
   shortcuts: [
     {
-      name: 'Últimas noticias',
+      name: 'Inicio',
+      shortName: 'Inicio',
+      description: 'Página principal',
+      url: '/?utm_source=homescreen',
+    },
+    {
+      name: 'Noticias',
       shortName: 'Noticias',
-      description: 'Ver las últimas noticias',
-      url: '/search/label/Noticias?utm_source=homescreen',
-    },
-    {
-      name: 'Política',
-      shortName: 'Política',
-      description: 'Noticias de política',
-      url: '/search/label/Política?utm_source=homescreen',
-    },
-    {
-      name: 'Deportes',
-      shortName: 'Deportes',
-      description: 'Noticias deportivas',
-      url: '/search/label/Deportes?utm_source=homescreen',
+      description: 'Últimas noticias',
+      url: '/search?utm_source=homescreen',
     },
   ],
-
-  /* =====================
-   * PWA FEATURES
-   * ===================== */
   pwa: {
-    logs: false, // poner true solo si estás debugueando
-
-    // OneSignal SOLO funciona con dominio propio + Cloudflare
+    logs: true,
     oneSignalEnabled: false,
-
-    oneSignalConfig: {
-      appId: '', // dejar vacío si no usás OneSignal
-      allowLocalhostAsSecureOrigin: false,
-    },
   },
-
-  /* =====================
-   * URL REAL DEL BLOG
-   * ===================== */
   origin: 'https://porxrazoninfo.blogspot.com',
-
 } satisfies Config;
