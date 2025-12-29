@@ -33,5 +33,5 @@ export default {
     logs: true,
     oneSignalEnabled: false,
   },
-  origin: 'https://porxrazoninfo.blogspot.com/',
+  origin: 'https://cdn.jsdelivr.net/gh/pxrcontacto/blogger-pwa@main/bucket',
 } satisfies Config;
