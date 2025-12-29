@@ -6,8 +6,8 @@
   "dir": "auto",
   "lang": "en-US",
   "orientation": "natural",
-  "start_url": "https://porxrazoninfo.blogspot.com/?utm_source=homescreen",
-  "scope": "https://porxrazoninfo.blogspot.com/",
+  "start_url": "https://cdn.jsdelivr.net/?utm_source=homescreen",
+  "scope": "https://cdn.jsdelivr.net/",
   "display": "standalone",
   "prefer_related_applications": false,
   "background_color": "#ffffff",
@@ -118,7 +118,7 @@
       "name": "Inicio",
       "short_name": "Inicio",
       "description": "Página principal",
-      "url": "https://porxrazoninfo.blogspot.com/?utm_source=homescreen",
+      "url": "https://cdn.jsdelivr.net/?utm_source=homescreen",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
@@ -130,7 +130,7 @@
       "name": "Noticias",
       "short_name": "Noticias",
       "description": "Últimas noticias",
-      "url": "https://porxrazoninfo.blogspot.com/search?utm_source=homescreen",
+      "url": "https://cdn.jsdelivr.net/search?utm_source=homescreen",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
