@@ -1,17 +1,17 @@
 {
-  "name": "My Blog",
+  "name": "PORXRAZON INFO",
   "id": "/",
-  "short_name": "My Blog",
-  "description": "My blog description goes here...",
+  "short_name": "PORXRAZON",
+  "description": "¡Te acompañamos en cualquier parte del mundo!",
   "dir": "auto",
   "lang": "en-US",
   "orientation": "natural",
-  "start_url": "https://hello-example.blogspot.com/?utm_source=homescreen",
-  "scope": "https://hello-example.blogspot.com/",
+  "start_url": "https://porxrazoninfo.blogspot.com/?utm_source=homescreen",
+  "scope": "https://porxrazoninfo.blogspot.com/",
   "display": "standalone",
   "prefer_related_applications": false,
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "icons/favicon.ico",
@@ -115,10 +115,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Shortcut 1",
-      "short_name": "Shortcut 1",
-      "description": "Shortcut 1 description goes here...",
-      "url": "https://hello-example.blogspot.com/search/label/shortcut-1?utm_source=homescreen",
+      "name": "Inicio",
+      "short_name": "Inicio",
+      "description": "Página principal",
+      "url": "https://porxrazoninfo.blogspot.com/?utm_source=homescreen",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
@@ -127,10 +127,10 @@
       ]
     },
     {
-      "name": "Shortcut 2",
-      "short_name": "Shortcut 2",
-      "description": "Shortcut 2 description goes here...",
-      "url": "https://hello-example.blogspot.com/search/label/shortcut-2?utm_source=homescreen",
+      "name": "Noticias",
+      "short_name": "Noticias",
+      "description": "Últimas noticias",
+      "url": "https://porxrazoninfo.blogspot.com/search?utm_source=homescreen",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
