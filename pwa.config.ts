@@ -2,7 +2,7 @@ import type { Config } from './types';
 
 export default {
   /* =====================
-   * IDENTIDAD DE LA APP
+   * IDENTIDAD DE LA APPP
    * ===================== */
   id: '/',
   name: 'PORXRAZON INFO',
